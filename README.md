@@ -1,8 +1,8 @@
 # Theme Skeleton
 
-> This is a skeleton for developing themes for your [Sorry](http://www.sorryapp.com) status page. It comes with simple example file structure, [Grunt](http://gruntjs.com/) tasks and various other useful utilities to get you up and running when developing your theme from scratch.
+> This is a skeleton starter theme for a [Sorry](http://www.sorryapp.com) status page. It comes with a bare bones file structure and a set of [Grunt](http://gruntjs.com/) tasks to help you develop a theme from scratch.
 >
-> **For more details on theme development, read our [Theme documenation](http://docs.sorryapp.com/themes)**.
+> **For more details on theme development, read the docs on [Theming your status page](http://docs.sorryapp.com/themes)**.
 
 ## Getting The Theme
 
@@ -17,19 +17,24 @@ The simplest option if you don't wish to make any changes to the theme is to upl
 
 ## Automatic Deployment with Grunt
 
-To make development and deployment of your themes even easier you can use the included Grunt deployment tasks.
+To make development and deployment of the theme even easier you can use the included Grunt deployment tasks.
 
 These tasks take the themes source code, bundle it into a deployable zip and upload it to your status page through the Sorry API.
 
-### Install Grunt
+### Installing Grunt
 
-From the command line, navigate to the root of this downloaded theme project and run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
+From the command line:
+
+1. Navigate to the root of this downloaded theme project
+2. Run `npm install`. 
+
+npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
 
 **Unfamiliar with `npm`? Don't have node installed?** That's a-okay. npm stands for [node packaged modules](http://npmjs.org/) and is a way to manage development dependencies through node.js. [Download and install node.js](http://nodejs.org/download/) before proceeding.
 
-### Create the `sorry.json` File
+### Authenticating with Sorry
 
-We need somewhere to keep your Sorry login credentials. In the root of your project create a file called `sorry.json` which contains your username and password - don't worry, this will NOT be commited to your repo as we've included it in the `.gitignore`.
+We need somewhere to keep your Sorry login credentials. In the root of your project create a file called `sorry.json` which contains your username and password - don't worry, this will NOT be commited to your repo as we've included it in `.gitignore`.
 
 ```json
 {
@@ -38,11 +43,11 @@ We need somewhere to keep your Sorry login credentials. In the root of your proj
 }
 ```
 
-### Available Grunt commands
+### Available Grunt Tasks
 
-**Run all commands with the command line flag `--sorry-page="YOUR PAGE ID HERE"` to tell the tasks which page to deploy the theme too.**
+**Run all commands with flag `--sorry-page="YOUR PAGE ID HERE"` to tell the tasks which page to deploy the theme to.**
 
-You can find your page ID in the address bar of your Sorry account. i.e. a URL of `http://app.sorryapp.com/pages/my-page` means your page ID is `my-page`.
+You can find your page ID in the address bar of your Sorry account. A page URL of `http://app.sorryapp.com/pages/my-page` suggests the page ID is `my-page`.
 
 #### Deploy - `grunt deploy`
 
@@ -55,6 +60,8 @@ This is a convenience method for watching all the core HTML, CSS and JS assets i
 #### Release - `grunt release <:patch | :minor | :major>`
 
 Bumps the [version number](#versioning) and creates a new git tag for the theme. You can append the release command with patch, minor or major depending on the version number increment you wish to make.
+
+You don't need to use the release task, it can just be handy to organise released versions of the theme.
 
 ## Contributing
 
