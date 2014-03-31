@@ -1,0 +1,33 @@
+{
+  "name": "theme-skeleton",
+  "description": "A skeleton status page theme for Sorry.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/supporttime/theme-skeleton",
+  "author": {
+    "name": "Robert Rawlins",
+    "email": "robert@sorryapp.com"
+  },
+  "contributors": [
+    {
+      "name": "Robin Geall",
+      "email": "robin@sorryapp.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:supporttime/theme-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supporttime/theme-skeleton/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-sorry-theme-deploy": "0.2.1",    
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-release": "^0.7.0"
+  }
+}
