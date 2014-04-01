@@ -43,17 +43,21 @@ We need somewhere to keep your Sorry login credentials. In the root of your proj
 }
 ```
 
-### Available Grunt Tasks
+### Deploying Your Theme
 
-**Run all commands with flag `--sorry-page="YOUR PAGE ID HERE"` to tell the tasks which page to deploy the theme to.**
+Now we have your authentication details in place we should be ready to deploy the theme. **However, as per our docs [we suggest you create a demo page for testing your theme](http://docs.sorryapp.com/themes/getting-started/uploading-your-theme.html), rather than deploying to your live page.**
 
-You can find your page ID in the address bar of your Sorry account. A page URL of `http://app.sorryapp.com/pages/my-page` suggests the page ID is `my-page`.
+When you're ready to deploy, use the `deploy` task from the command line:
 
-#### Deploy - `grunt deploy`
+```
+grunt deploy --sorry-page="YOUR PAGE ID HERE"
+```
 
-Bundles files in the `src` directory into `dist/theme.zip` before deploying it to your chosen page.
+*You can find your page ID in the address bar of your Sorry account. A page URL of `http://app.sorryapp.com/pages/my-page` suggests the page ID is `my-page`.*
 
-#### Watch - `grunt watch`
+### Other Grunt Tasks
+
+#### Watch - `grunt watch --sorry-page="YOUR PAGE ID HERE"`
 
 This is a convenience method for watching all the core HTML, CSS and JS assets in your theme, whenever you make a change to these files grunt will automaticly bundle and deploy your theme as above.
 
@@ -61,7 +65,7 @@ This is a convenience method for watching all the core HTML, CSS and JS assets i
 
 Bumps the [version number](#versioning) and creates a new git tag for the theme. You can append the release command with patch, minor or major depending on the version number increment you wish to make.
 
-You don't need to use the release task, it can just be handy to organise released versions of the theme.
+*You don't need to use the release task, it can just be handy to organise released versions of the theme.*
 
 ## Contributing
 
