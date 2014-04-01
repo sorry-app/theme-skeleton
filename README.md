@@ -7,7 +7,7 @@
 ## Getting The Theme
 
 1. <a href="archive/master.zip">Download</a> the latest version
-2. or clone the git repo: <code>git clone git@github.com:supporttime/theme-skeleton.git</code>
+2. or clone the git repo: <code>git clone git@github.com:sorry-app/theme-skeleton.git</code>
 
 ## Manual Deployment
 
