@@ -2,7 +2,7 @@
 
 > This is a skeleton starter theme for a [Sorry](http://www.sorryapp.com) status page. It comes with a bare bones file structure and a set of [Grunt](http://gruntjs.com/) tasks to help you develop a theme from scratch.
 >
-> **For more details on theme development, read the docs on [Theming your status page](http://docs.sorryapp.com/themes)**.
+> **For more details on theme development, read the docs on [theming your status page](http://docs.sorryapp.com/themes)**.
 
 ## Getting The Theme
 
